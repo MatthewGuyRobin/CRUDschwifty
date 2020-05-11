@@ -1,0 +1,39 @@
+body, html {
+    height:100%
+}
+.background{
+    background-image: url("/public/images/rickAndMortyBg.png");
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-title{
+    color: azure;
+    font-family: 'Gloria Hallelujah', cursive;
+    display: flex;
+    justify-content: center;
+}
+.title{
+    color: azure;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.quote{
+    color: azure;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: large;
+}
+.button{
+    font-family: 'Gloria Hallelujah', cursive;
+    border-radius: 25%;
+}
+ul{
+    color: azure;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    float: right;
+}

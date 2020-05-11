@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <title>get schwifty app</title>
+</head>
+
+<body class="background">
+    <h1 class="main-title">time to get schwifty</h1>
+        <h6 class="quote">add a quote</h6>
+    <form action="/quotes" method="POST">
+        <input type="text" placeholder="Character" name="name">
+        <input type="text" placeholder="Quote" name="quote">
+        <button type="submit">Submit</button>
+    </form>
+    <div class="input-container">
+        <div>
+            <p class="title">Shleemypants has found Rick onclick the first Rick quote will be replaced</p>
+            <button id="update-button" class="button">cause a rickle in time</button>
+        </div>
+        <div>
+            <p class="title">remove Shleemypants from the universe, does nothing if Shleemypants has already been
+                removed</p>
+            <button id="delete-button" class="button">remove from universe</button>
+            <div id="message"></div>
+        </div>
+    </div>
+    <ul>
+        <% for(let i = 0; i < quotes.length; i++) {%>
+        <li>
+            <span><%= quotes[i].name%></span>
+            <span><%= quotes[i].quote%></span>
+            <%}%>
+        </li>
+    </ul>
+    <script src="/public/main.js"></script>
+</body>
+</html>
